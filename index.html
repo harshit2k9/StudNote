@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    StudNote - India's Largest Learning Source!
+  </title>
+  <link rel="icon" href="hero.jpg" type="image/x-icon" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>StudNote</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Welcome to StudNote</h2>
+      <p>India's Largest Learning Source!</p>
+      <a href="#subjects" class="btn">Explore Subjects</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We provide comprehensive notes and learning materials for students of all ages. Our mission is to make learning
+        accessible and engaging for everyone.</p>
+    </div>
+  </section>
+
+  <section id="subjects">
+    <div class="container">
+      <h2>Our Subjects</h2>
+      <div class="subject-grid">
+        <div class="subject-item" onclick="showContent('mathematics')">
+          <i class="fas fa-calculator"></i>
+          <h3>Mathematics</h3>
+          <p>Notes and resources for all levels of Mathematics.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('science')">
+          <i class="fas fa-flask"></i>
+          <h3>Science</h3>
+          <p>Explore our extensive Science materials and resources.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('history')">
+          <i class="fas fa-landmark"></i>
+          <h3>History</h3>
+          <p>Detailed notes and guides on various historical topics.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('geography')">
+          <i class="fas fa-globe"></i>
+          <h3>Geography</h3>
+          <p>Comprehensive Geography notes for students.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('english')">
+          <i class="fas fa-book"></i>
+          <h3>English</h3>
+          <p>Literature and language resources for English.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('computers')">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Computer Science</h3>
+          <p>Notes and tutorials on various computer science topics.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('economics')">
+          <i class="fas fa-chart-line"></i>
+          <h3>Economics</h3>
+          <p>In-depth notes on Economics and related subjects.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('physics')">
+          <i class="fas fa-atom"></i>
+          <h3>Physics</h3>
+          <p>Comprehensive notes and guides on Physics.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('chemistry')">
+          <i class="fas fa-vials"></i>
+          <h3>Chemistry</h3>
+          <p>Detailed notes on Chemistry topics.</p>
+        </div>
+        <div class="subject-item" onclick="showContent('biology')">
+          <i class="fas fa-dna"></i>
+          <h3>Biology</h3>
+          <p>Extensive resources for Biology students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Get in touch with us.</p>
+      <form id="contact-form" netlify>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 StudNote. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
